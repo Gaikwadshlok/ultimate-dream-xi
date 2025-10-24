@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Global fix to prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  font-family: 'Bebas Neue', sans-serif;
+  background-image: url('/stadium-bg.jpg'); /* image must be in public/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Ensure React root takes full height */
+#root {
+  min-height: 100vh;
+}
+
+/* Optional: smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+body {
+    background-image: url('/stadium-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
